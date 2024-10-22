@@ -660,6 +660,75 @@ span{
 
 }
 
+@media(max-width: 768px) {
+    /* Ajuster la taille de la police pour plus de lisibilité */
+    html {
+        font-size: 50%;
+    }
+
+    /* Rendre la navigation plus compacte */
+    .navbar {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .navbar a {
+        font-size: 1.8rem;
+        margin: 2rem;
+    }
+
+    /* Réduire la marge pour l'élément home */
+    .home {
+        margin: 4rem 2rem;
+    }
+
+    /* Ajuster les images ou les éléments circulaires */
+    .html-circle-1 {
+        bottom: 3rem;
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media(max-width: 576px) {
+    /* Réduire encore la taille de la police pour les petits smartphones */
+    html {
+        font-size: 45%;
+    }
+
+    /* Améliorer l'affichage du menu pour les petits écrans */
+    .navbar {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+        margin: 1.5rem;
+    }
+
+    /* Ajuster encore les marges et les paddings pour les sections */
+    header {
+        padding: 1rem 2%;
+    }
+
+    section {
+        padding: 8rem 2% 1rem;
+    }
+
+    .home {
+        margin: 3rem 1rem;
+    }
+
+    /* Réduire la taille des éléments circulaires */
+    .html-circle-1 {
+        width: 50vw;
+        height: 50vw;
+        bottom: 2rem;
+    }
+}
+
+
 
 /* 
 
