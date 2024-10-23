@@ -262,7 +262,7 @@ span{
 .heading{
     white-space: nowrap;
     text-align: center;
-    font-size: 8rem;
+    font-size: 6rem;
 }
 
 .about-content h2{
@@ -320,7 +320,7 @@ span{
 
 .about-content h4{
     white-space: nowrap;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .education h1{
@@ -369,10 +369,12 @@ span{
 
 }
 
-.education-box i{
-    font-size: 50px;
-    margin-top: 4rem;
-    color: #f75023;
+.education-box img{
+    width: 100px; /* Ajuste la taille selon tes besoins */
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 .education-box h3{
@@ -384,8 +386,9 @@ span{
 
 
 .education-box p{
+    margin-top: 1rem;
     opacity: 0.8;
-    font-size: 16px;
+    font-size: 13px;
     
 }
 
@@ -691,40 +694,26 @@ span{
 }
 
 @media(max-width: 576px) {
-    /* Réduire encore la taille de la police pour les petits smartphones */
-    html {
-        font-size: 45%;
+    /* Limiter la largeur des conteneurs */
+    .education, .projects {
+        max-width: 100%;
+        padding: 2rem 1rem;
+        margin: 0 auto;
     }
 
-    /* Améliorer l'affichage du menu pour les petits écrans */
-    .navbar {
-        padding: 0.5rem;
-        width: 100%;
+    /* S'assurer que le texte respecte la largeur du conteneur */
+    .education p, .projects p {
+        word-wrap: break-word; /* Permet de couper les mots longs */
+        text-align: justify; /* Aligner le texte de façon justifiée pour un rendu propre */
+        margin: 1rem 0;
+        line-height: 1.5; /* Espacement entre les lignes */
     }
 
-    .navbar a {
-        font-size: 1.6rem;
-        margin: 1.5rem;
-    }
-
-    /* Ajuster encore les marges et les paddings pour les sections */
-    header {
-        padding: 1rem 2%;
-    }
-
-    section {
-        padding: 8rem 2% 1rem;
-    }
-
-    .home {
-        margin: 3rem 1rem;
-    }
-
-    /* Réduire la taille des éléments circulaires */
-    .html-circle-1 {
-        width: 50vw;
-        height: 50vw;
-        bottom: 2rem;
+    /* Assurez-vous que les éléments de la section projet sont bien contenus */
+    .projects h2 {
+        text-align: center; /* Centrer les titres */
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
 }
 
