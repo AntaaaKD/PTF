@@ -3,7 +3,7 @@ var typed = new Typed(".typewriter-text", {
         "___ Fondatrice de Sa Muse❤️___",
         "a BlueTeamer🕵",
         "a Crochet Enthusiast🧶",
-        "an Animes Lover🔥❤️",
+        "and K-drama Lover🔥❤️",
     ],
     typeSpeed: 100,
     backSpeed: 70,
